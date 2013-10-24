@@ -117,7 +117,7 @@ MPF_DECLARE(apt_bool_t) mpf_scheduler_rate_set(
 								mpf_scheduler_t *scheduler,
 								unsigned long rate)
 {
-	if(rate == 0 || rate > 10) {
+	if(rate == 0) {
 		/* rate shows how many times scheduler should be faster than real-time,
 		1 is the defualt and probably the only reasonable value, 
 		however, the rates up to 10 times faster should be acceptable */
